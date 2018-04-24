@@ -727,7 +727,7 @@ function op_common_sublink_custom_title(&$link, $titles, $subargs = NULL) {
     $subargs = ctsi_subs_args($link['href']);
     if (empty($subargs)) {
       dpm(compact('link','subargs'), __FUNCTION__ . ' sees an invalid sublink entry?');
-      continue;
+      return;
     }
   }
   if (
